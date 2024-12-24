@@ -376,6 +376,9 @@ ifdef ONEWIFI_BLASTER_APP_SUPPORT
 	WEBCONFIG_SOURCES += $(ONE_WIFI_HOME)/source/webconfig/wifi_webconfig_blaster.c
 endif
 
+ifdef ONEWIFI_EASYCONNECT_APP_SUPPORT
+	CSOURCES += $(wildcard $(ONE_WIFI_HOME)/source/apps/easyconnect/*.c)
+endif
 
 COBJECTS = $(CSOURCES:.c=.o)  # expands to list of object files
 

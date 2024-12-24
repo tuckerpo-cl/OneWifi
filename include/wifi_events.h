@@ -213,6 +213,7 @@ typedef struct {
         wifi_provider_response_t     *provider_response;
         webconfig_subdoc_data_t *webconfig_data;
         wifi_csi_dev_t          *csi;
+        wifi_easyconnect_data_t *ec_data;
     } u;
 } wifi_event_t;
 
